@@ -1,5 +1,5 @@
 document.querySelector('.dropdown button').addEventListener('click', function () {
-	document.querySelector('.dropdown-content').classList.toggle('show');
+	document.querySelector('.dropdown-content').classList.toggle();
 });
 
 // Close dropdown menu if user clicks outside of it
@@ -8,8 +8,8 @@ window.addEventListener('click', function (event) {
 		var dropdowns = document.querySelectorAll('.dropdown-content');
 		for (var i = 0; i < dropdowns.length; i++) {
 			var openDropdown = dropdowns[i];
-			if (openDropdown.classList.contains('show')) {
-				openDropdown.classList.remove('show');
+			if (openDropdown.classList.contains()) {
+				openDropdown.classList.remove();
 			}
 		}
 	}
